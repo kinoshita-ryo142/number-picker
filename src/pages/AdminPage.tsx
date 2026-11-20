@@ -237,8 +237,7 @@ export function AdminPage({ onNavigate }: AdminPageProps) {
   const handleResetSession = async () => {
     if (!clinic) return
     const ok = window.confirm(
-      '受付番号を「1番」にリセットしますか？（午前・午後の切り替えなど）
-※これまでの番号は無効になり、次の発券から1番になります。',
+      '受付番号を「1番」にリセットしますか？（午前・午後の切り替えなど）※これまでの番号は無効になり、次の発券から1番になります。',
     )
     if (!ok) return
 
